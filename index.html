@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>HAU T1 App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/tailwind2.css">
+        <link rel="stylesheet" href="https://resources.izmichael.xyz/assets/tailwind2.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="./assets/styles.css">
+        <link rel="icon" type="image/png" href="./favicon.png"/>
+    </head>
+
+    <body>
+        <div id="wrapper" class="screen p-10 flex flex-col justify-center items-center">
+            <div id="app" class="flex flex-col justify-start full">
+                <div class="w-full flex flex-row mb-1 bg-blue-200 rounded-lg">
+                    <div class="flex flex-row flex-1 px-1 py-1">
+                        <button id="startBtn" onclick="show('start')" class="p-4 flex flex-col justify-center items-center w-48 selectable rounded-lg">Home</button>
+                        <button id="personalityBtn" onclick="show('personality'); startPersonality();" class="p-4 flex flex-col justify-center items-center w-48 selectable rounded-lg">Personalities</button>
+                        <button id="digitalBtn" onclick="show('digital')" class="p-4 flex flex-col justify-center items-center w-48 selectable rounded-lg">Digital Citizenship</button>
+                    </div>
+                    <a href="https://izmichael.xyz" class="text-xl flex flex-col justify-center items-end text-right p-4 rounded-lg selectable">&copy; Michael Martin</a>
+                </div>
+                <div id="pages" class="justify-flex flex-col justify-center items-center full overflow-hidden bg-blue-200 rounded-lg"></div>
+            </div>
+        </div>
+        <script src="./assets/js/main.js"></script>
+    </body>
+
+</html>
